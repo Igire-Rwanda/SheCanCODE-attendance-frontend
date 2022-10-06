@@ -3,6 +3,7 @@ import "./header.css";
 import logo from "../assets/logos1.png";
 import SearchIcon from '@mui/icons-material/Search';
 import { styled } from '@mui/material/styles';
+
 const Header = () =>{
   const SearchIconWrapper = styled('div')(({ theme }) => ({
     padding: theme.spacing(0, 2),
@@ -13,6 +14,7 @@ const Header = () =>{
     alignItems: 'center',
     justifyContent: 'center',
   }));
+ 
     return(
         <>
       <div className ="headerContainer">
@@ -23,7 +25,7 @@ const Header = () =>{
           <a href="/home">Home</a>
           <a href="/sign in"> Sign In</a>
           <a href="/contactus">Contact Us</a>
-          <a href="/log out">Logout</a>
+          {/* <a href="/log out">Logout</a> */}
         
      </div>
      <div className="leftHeder">
@@ -36,6 +38,8 @@ const Header = () =>{
      </div>
      <div className="menuIcon">
     
+           
+
      </div>
      </div>
       </div>

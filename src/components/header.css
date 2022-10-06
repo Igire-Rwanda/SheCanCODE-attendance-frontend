@@ -37,7 +37,7 @@ background: #FFFFFF;
     font-family:' Poppins',sans-serif;
     font-style: normal;
     font-weight: 600;
-    padding: 1.2rem 2.2rem;
+    padding: 2rem 3rem;
     line-height: 1.8rem;
     
     color: #28ABE2;   
@@ -68,3 +68,43 @@ background: #FFFFFF;
 .menuIcon{
     width: 10%;
 }
+@media (max-width:400px) {
+ .headerContainer{
+ width: 100%;
+position: absolute;
+left: 0px;
+background: #FFFFFF;
+height:  122px;
+border: 1px solid #FFFFFF;
+box-shadow: 0px 0px 20px #000000;
+display: block;
+display: grid;
+    }
+    .navBar{
+        
+width: 60px;
+position: absolute;
+width: 100px;
+left: 100px;
+top: 13rem;
+
+background: #FFFFFF;
+    }
+    .navBar a{
+     display: block;   
+     font-size: 1rem;
+     padding: 1rem 1rem;
+     
+
+    } 
+    .navBar a ::after{
+    
+        position:absolute;
+        width: 0%;
+        height: 2px;
+        left:0;
+        bottom:-4px;
+        transform: ease.40s;
+        cursor:pointer;
+    }
+} 
