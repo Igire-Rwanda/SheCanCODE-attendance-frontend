@@ -1,0 +1,223 @@
+:root{
+    --main-color: rgba(18, 135, 177, 0.3);
+ }
+ .homeContainer{
+    background-color:var(--main-color);
+    /* height: 100vh; */
+ 
+ }
+ .bodyImage1{
+    height: 100vh;
+    background-color: black;
+    position: relative;
+ }
+ .bodyImage1 img {
+    max-width: 100%;
+    height:auto;
+ 
+    /* object-fit:cover;     */
+ }
+ .text1{
+     position: absolute;
+     bottom: 40rem;
+     right: 32rem;
+ }
+ .text2{
+    position: absolute;
+    bottom: 37rem;
+    right: 40rem;
+   
+ }
+ .text3{
+    position: absolute;
+    bottom: 29rem;
+    right: 38rem;
+    font-size: 2rem;
+ }
+ 
+ .bodytext{
+     color: white;
+     font-size: 10rem;
+     /* padding-top: 40rem; */
+     /* padding-left: 60rem; */
+ 
+ }
+ .button1{
+    position: absolute;
+    background-color: white;
+    width: 11%;
+    height: 2.5rem;
+    bottom: 25rem;
+    right: 53rem;
+    text-align: center;
+    border-radius: 5rem;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    padding: .2rem;
+    
+ }
+ .button1:hover {
+    background-color: rgb(15, 155, 211);
+ }
+ .button1 a {
+    color: black;
+    text-decoration: none;
+ }
+ .button2{
+    position: absolute;
+    background-color: white;
+    width: 11%;
+    height: 2.5rem;
+    bottom: 25rem;
+    right: 30rem;
+    text-align: center;
+    border-radius: 3rem;
+    font-size: larger;
+    cursor: pointer;
+    font-weight: 600;
+    padding: .2rem;
+ }
+ .button2:hover {
+    background-color: rgb(15, 155, 211);
+ }
+ .button2 a {
+    color: black;
+    text-decoration: none;
+ }
+ .bodyImage2{
+    /* background-color: var(--main-color); */
+    height: 90vh;
+    margin-top: 20rem;
+ }
+ .bodyImage2 p {
+    font-size: 2rem;
+    margin-top: 10rem;
+    margin-left: 25rem;
+    box-sizing: border-box;
+ }
+ .PermissionButton {
+    position: absolute;
+    background-color: white;
+    width: 11%;
+    height: 2.5rem;
+    /* top: 5rem; */
+    left: 25rem;
+    text-align: center;
+    border-radius: 3rem;
+    font-size: larger;
+    cursor: pointer;
+    font-weight: 600;
+    padding: .2rem;
+    margin-top: 1rem;
+ }
+ .PermissionButton:hover {
+    background-color: rgb(15, 155, 211);
+ }
+ .PermissionButton a {
+    color: black;
+    text-decoration: none;
+ }
+ 
+ .photo{
+    height: 80vh;
+     /* width: 55%; */
+     /* display: flex; */
+     /* background-color: yellow; */
+     padding: 1rem;
+     
+ }
+ .photo1{
+     background-image: url(https://res.cloudinary.com/dggvxdkri/image/upload/v1665065558/samples/Attendance%20pict/bodyimage3_class.home-modified_w4p1xq.png);
+     position: absolute;
+     width: 35rem;
+     height: 35rem;
+     left: 80rem;
+     top: 80rem;
+     border-radius: 50%;
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-position: center;
+     border: #ffff .7rem solid;
+     object-fit: cover;
+ }
+ .photo2{
+    background-image: url(https://res.cloudinary.com/dggvxdkri/image/upload/v1665065517/samples/Attendance%20pict/bodyimage2.home-modified_kyzmje.png);
+    position: absolute;
+     width: 30rem;
+     height: 30rem;
+     left: 100rem;
+     top: 103rem;
+     border-radius: 50%;
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-position: center; 
+     border: #ffff .7rem solid;
+     object-fit: cover;
+ }
+ .photo3{
+    background-image: url(https://res.cloudinary.com/dggvxdkri/image/upload/v1665065467/samples/Attendance%20pict/bodyimage1.home-modified_rardrx.png);
+    position: absolute;
+     width: 27rem;
+     height: 27rem;
+     left: 80rem;
+     top: 110rem;
+     border-radius: 50%;
+     background-size: 100%;
+     background-repeat: no-repeat;
+     background-position: center; 
+     border: #ffff .7rem solid;
+     object-fit: cover;
+ }
+ .bodyImage3{
+    height: 80vh;
+    display: flex;
+    
+    /* background-color: green; */
+ }
+ 
+ .bodyImage3 p {
+    font-size: 2rem;
+    padding-top: 10rem;
+    margin-left: 25rem;
+ }
+ .statusImage{
+    background-image: url(https://res.cloudinary.com/dggvxdkri/image/upload/v1665086847/samples/Attendance%20pict/online-time-and-attendance-removebg-preview_ysma94.png);
+    position: absolute;
+     width: 50rem;
+     height: 32rem;
+     left: 80rem;
+     top: 160rem;
+     background-size: 100%;
+     background-repeat:no-repeat;
+     border-radius: 10%;
+     background-color: white;
+     padding: 10rem;
+     object-fit: cover;
+ 
+ }
+ .CheckStatusButton{
+    position: absolute;
+    background-color: white;
+    width: 11%;
+    height: 3rem;
+    left: 25rem;
+    text-align: center;
+    border-radius: 3rem;
+    font-size: larger;
+    cursor: pointer;
+    font-weight: 600;
+    /* padding: .2rem; */
+    margin-top: 28rem;
+ }
+ .CheckStatusButton:hover {
+    background-color: var(--main-color);
+ }
+ .CheckStatusButton a {
+    color: black;
+    text-decoration: none;
+    font-size: 1.5rem;
+ }
+ .statusImage{
+ 
+ }

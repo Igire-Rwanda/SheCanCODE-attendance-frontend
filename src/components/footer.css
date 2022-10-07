@@ -19,9 +19,11 @@
 }
 .footer-middle h1{
   margin-left: 10rem;
+  color: #28ABE2;
 }
 .footer-middle  ul li{
   margin-left: 10rem;
+ 
 }
 .footer-left{
   padding-left: 3rem;
@@ -29,14 +31,29 @@
 ul li{
   list-style: none;
   text-decoration: none;
+  margin-bottom: 2rem;
   
 }
 .contact-info ul li{
   list-style-type: none;
+  margin-bottom: 3rem;
+}
+.contact-info h1{
+  color: #28ABE2;
+  margin-left: 2.5rem;
 }
 ul li a {
   text-decoration: none;
+  color: #ffff;
+}
+ul li a:hover{
   color: #28ABE2;
+}
+.footer-right{
+  transition: transform .9s;
+}
+.footer-right a img:hover{
+  transform: scale(1.2);
 
 }
 
@@ -66,3 +83,4 @@ ul li a {
 .footer-copyright{
   letter-spacing: .2rem;
 }
+
