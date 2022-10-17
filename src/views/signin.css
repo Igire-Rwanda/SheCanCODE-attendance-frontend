@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.signContainer{
+    width: 100%;
+    position:absolute ;
+    left: 0px;
+    top: 14.2rem;
+    display: flex;
+    height: 75rem;
+    background: rgba(18, 135, 177, 0.3);
+   justify-content: space-between;
+   
+}
+
+.imgContainer img{
+position: absolute;
+width: 73.2rem;
+height: 44rem;
+left: 4.3rem;
+top: 22rem;  
+}
+
+.form{
+position: absolute;
+width: 45rem;
+height: 50.3rem;
+left: 75rem;
+top: 12rem;
+
+background: white;
+}
+.form h1{
+text-align: center;
+padding-top: 4rem;
+}
+@media (max-width:1075px){
+    .signContainer{
+        width: 150rem;
+        display: block;
+        /* display: grid; */
+        left: 0px;
+        top: 14.2rem;
+        position:absolute ;
+    }
+    .imgContainer img{
+        position: absolute;
+       width: 30rem;
+       left: 20rem;
+       top: 15rem;  
+
+        
+        }
+        
+}
