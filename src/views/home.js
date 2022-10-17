@@ -56,7 +56,7 @@ const Home = () =>{
   
        </div>
 
-    // </HomeLAyout>
+    //  </HomeLAyout>
    
   )
 }
