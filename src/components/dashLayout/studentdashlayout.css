@@ -1,0 +1,82 @@
+.student-header__search{
+  padding: 1rem;
+}
+.student__search{
+  width: 60%;
+  
+}
+.student__search-icon{
+  position: absolute;
+  right: 37rem;
+  top: 2rem;
+
+}
+
+.student__notification-icon{
+  position: absolute;
+  right: 3rem;
+  
+}
+.sider__container{
+  background-color: #3CB5C6;
+  padding: 2rem;
+
+}
+.statistics__level{
+  font-size: 2rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: .25rem;
+}
+.statistics__level-icon{
+  color: #3CB5C6;
+  margin-left: 7rem;
+  margin-top: -1rem;
+  background-color: black;
+  border-radius: 40%;
+  
+}
+.statistics__level-content{
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight:400;
+  letter-spacing: .2rem;
+}
+.statistics__level-content-word{
+  text-align: center;
+  padding-top: 2rem;
+  font-size: 3.5rem;
+  position: relative;
+  font-weight: 800;
+}
+.statistics__level-content-percentage{
+  font-size: 2rem;
+  position: absolute;
+  top: 3rem;
+  left: 11rem;
+  font-weight: 500;
+ 
+
+}
+.logo__footer-dash{
+  width: 70%;
+}
+.box__container-dash{
+  font-size: 1.5rem;
+  letter-spacing: .2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 4rem;
+}
+.box__container-time{
+  color: #3CB5C6;
+  font-size: 1.5rem;
+  letter-spacing: .1rem;
+  padding-left: 1rem;
+}
+.chart__container{
+  margin-left: 4rem;
+}
