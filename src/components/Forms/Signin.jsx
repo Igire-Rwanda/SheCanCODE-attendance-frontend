@@ -1,3 +1,5 @@
+import axios from "axios";
+import { Toast } from "bootstrap";
 import React from "react";
 import { useForm } from "react-hook-form";
 
@@ -7,9 +9,9 @@ function Signin() {
     handleSubmit,
     formState: { errors }
   } = useForm();
-  const onSubmit = (data) => {
-    console.log(JSON.stringify(data));
-  }; 
+  // const onSubmit = (data) => {
+  //   console.log(JSON.stringify(data));
+  // }; 
   return (
 <>
 <div className="bg-blue-300 h-screen overflow-hidden flex items-center justify-center">
@@ -24,7 +26,14 @@ function Signin() {
       </svg>
     </div>
 
-    <form onSubmit={handleSubmit(onSubmit)} className="p-12 md:p-24">
+    <form action="#" onSubmit={handleSubmit(async(data) => {
+      const response = await axios.post("http://localhost:4040/v1/attendance/user/login",data);
+      Toast.success("logged In");
+      console.log(response.data.data);
+    })} 
+    className="p-12 md:p-24">
+
+
       <div className="flex items-center text-lg mb-6 md:mb-8">
         <svg 
         className="absolute ml-3" 
@@ -35,7 +44,7 @@ function Signin() {
         <input 
          type="email"
          id="username"
-         className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" 
+         className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full text-2xl" 
          placeholder="Username or Email"
          {...register("mail", { required: "Email Address is required" })}
          />
@@ -54,7 +63,7 @@ function Signin() {
         <input
         type="password" 
         id="password" 
-        className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full" 
+        className="bg-gray-200 pl-12 py-2 md:py-4 focus:outline-none w-full text-2xl" 
         placeholder="Password"
         {...register("password", { required: "Password is required" })}
         />
@@ -63,7 +72,7 @@ function Signin() {
 
       <button 
       type="submit"
-      className="bg-gradient-to-b from-gray-700 to-gray-900 font-medium p-2 md:p-4 text-white uppercase w-full"
+      className="bg-gradient-to-b from-gray-700 to-gray-900 font-medium p-2 md:p-4 text-white uppercase w-full text-2xl"
       >
       Login
       </button>

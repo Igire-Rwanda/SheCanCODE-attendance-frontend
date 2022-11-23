@@ -1,9 +1,4 @@
 import React from "react";
-// import logo from "../assets/logos1.png";
-// import icon1 from "../assets/facebook.webp";
-// import icon2 from "../assets/twitter.webp";
-// import icon3 from "../assets/youtu.png";
-// import icon4 from "../assets/linked.png";
 import { faHome } from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope} from "@fortawesome/free-solid-svg-icons";
 import { faPhone} from "@fortawesome/free-solid-svg-icons";

@@ -1,20 +1,16 @@
 import React from "react";
 import {Routes, Route} from "react-router-dom"
-import Home from "../views/home";
-// import DashLayout from "../components/Dashboard/Layout"
 import View from "../views/Dashboard/DashLayout"
 import Signin from "../components/Forms/Signin";
-
-
+import HomePage from "../components/HomePage/HomePage"
 
 
 const Index = () =>{
   return(
     <>
-    
+  
     <Routes>
-      <Route path= "/" element = {<Home/>} />
-      <Route path= "home" element = {<Home/>} />
+      <Route path= "/" element = {<HomePage/>} />
       <Route path= "/Dashboard" element = {<View/>} />
       <Route path= "/signin" element = {<Signin/>} />
 
