@@ -7,6 +7,7 @@ import View from "../views/Dashboard/DashLayout";
 import Signin from "../components/Forms/Signin";
 import AdminDashboard from "../views/Dashboard/AdminDashboard";
 import Statistics from "../components/Statistics";
+import HomePage from "../components/HomePage/HomePage"
 
 
 
@@ -15,8 +16,10 @@ import Statistics from "../components/Statistics";
 const Index = () =>{
   return(
     <>
-    
+  
     <Routes>
+      <Route path= "/" element = {<HomePage/>} />
+      <Route path= "/Dashboard" element = {<View/>} />
       <Route path= "/" element = {<Home/>} />
       <Route path= "home" element = {<Home/>} />
       {/* <Route path= "/Dashboard" element = {<View/>} /> */}
