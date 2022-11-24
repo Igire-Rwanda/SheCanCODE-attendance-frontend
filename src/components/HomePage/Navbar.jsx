@@ -8,7 +8,7 @@ function Navbar() {
 <div className="flex flex-wrap">
   <section className="relative mx-auto drop-shadow-lg border-solid">
       
-    <nav className="flex justify-between bg-white w-screen">
+    <nav className="flex justify-between bg-white w-screengit">
       <div className="px-5 xl:px-5 py-6 flex w-full items-center">
         <a className="text-3xl font-bold font-heading" href="#">
           <img className="h-20" src="https://res.cloudinary.com/dggvxdkri/image/upload/v1665065641/samples/Attendance%20pict/logos1_v3xdrc.png" alt="logo"></img> 
