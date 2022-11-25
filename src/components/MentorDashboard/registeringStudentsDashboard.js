@@ -12,18 +12,25 @@ const RegisterStudents  = () =>{
   }
     return(
         <>
-        <div className="reggisterContainer" >
-      <h1>Registering Students</h1>  
-      <div className="formContainer">
+        <div className="registerContainer" >
+        <div className="register">
+      <h1>Registering Students</h1>
+
       <Box
       component="form"
       sx={{
-        '& .MuiTextField-root': { m: 1, width: '70ch' },display:'grid',
-        gridTemplateColumns: 'repeat(2,2fr)',left:'50rem',position:'absolute',top:'-10rem'
+        '& .MuiTextField-root': { m: 1, width: '40ch' },display:'grid',
+        gridTemplateColumns: 'repeat(2,2fr)',position:'absolute',top:'8rem',fontSize:'2rem',left:'10rem'
       }
     }
     >
       <div>
+      <TextField
+          required
+          id="outlined-required"
+        sx={{textAlign:'center',width:'50ch'}}
+               defaultValue="Add New Student"
+        />
         <TextField
           required
           id="outlined-required"
@@ -48,6 +55,19 @@ const RegisterStudents  = () =>{
          
         />
         <TextField
+        id="outlined-required"
+        label="Address"
+        defaultValue=""
+       
+      />
+    
+    <TextField
+         id="outlined-required"
+          label="Phone number"
+          defaultValue=""
+         
+        />
+        <TextField
           id="outlined-number"
           label="ClassName"
         
@@ -59,7 +79,7 @@ const RegisterStudents  = () =>{
       <LoadingButton
           size="small"
           color="secondary"
-          sx={{width:'10ch',height:'4vh' ,position:'absolute',top:'38rem',left:'5rem',background:'#28ABE2'}}
+          sx={{width:'20ch',height:'4vh' ,position:'absolute',top:'54rem',left:'5rem',background:'#28ABE2'}}
           onClick={handleClick}
           loading={loading}
           loadingPosition="start"
@@ -71,7 +91,7 @@ const RegisterStudents  = () =>{
         <LoadingButton
           size="small"
           color="secondary"
-          sx={{width:'10ch',height:'4vh' ,position:'absolute',top:'38rem',left:'25rem',background:'#28ABE2'}}
+          sx={{width:'20ch',height:'4vh' ,position:'absolute',top:'54rem',left:'25rem',background:'#28ABE2'}}
           onClick={handleClick}
           loading={loading}
           loadingPosition="start"
@@ -81,7 +101,8 @@ const RegisterStudents  = () =>{
           Cancel
         </LoadingButton>
     </Box>
-      </div>
+
+     </div>
       </div>
         </>
     )

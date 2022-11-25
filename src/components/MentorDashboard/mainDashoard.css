@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.divContainer{
+    width: 100%;
+    height: 80rem;
+    position: absolute;
+    background:rgba(18, 135, 177, 0.3) ;
+}
+.topContainer{
+    width: 100%;
+    height: 15vh;
+ justify-content: space-around;
+    display: flex;
+    position: absolute;
+    top:8rem;
+}
+
+.overviewContainer{
+    width: 100%;
+    /* background: red; */
+    position: absolute;
+    top:25rem;
+    justify-content: space-around;
+    display: flex;
+
+}
+.headerContainer {
+width: 100%;
+height:5vh;
+position: absolute;
+top:20rem;
+/* left:30rem; */
+/* text-align: center; */
+background-color:rgba(18, 135, 177, 0.3) ;
+}
+.headerContainer h1{
+    text-align: center;
+    position: absolute;
+    left: 60rem;
+}
+
