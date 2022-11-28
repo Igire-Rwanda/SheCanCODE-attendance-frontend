@@ -10,6 +10,7 @@ import Statistics from "../components/Statistics";
 import Redux from "../components/redux/actionType";
 import ReduxCounter from "../components/redux/ReduxCounter";
 import Mentors from "../components/Mentors";
+import StudentStatus from "../components/StudentStatus";
 
 
 
@@ -30,6 +31,7 @@ const Index = () =>{
         <Route path="students" element={<Signin />} />
       <Route path ="counter" element={<ReduxCounter/>}/>
       <Route path="mentors" element={<Mentors/>}/>
+      <Route path="view" element={<StudentStatus/>}/>
       </Route>
 
     </Routes>
