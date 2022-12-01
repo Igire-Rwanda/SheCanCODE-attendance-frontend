@@ -66,4 +66,4 @@ const AdminDashboard = () => {
   </div>)
 }
 
-export default AdminDashboard
+export default AdminDashboard;
