@@ -11,6 +11,7 @@ import Redux from "../components/redux/actionType";
 import ReduxCounter from "../components/redux/ReduxCounter";
 import Mentors from "../components/Mentors";
 import StudentStatus from "../components/StudentStatus";
+import TakeAttendance from "../components/TakeAttendance";
 
 
 
@@ -32,7 +33,10 @@ const Index = () =>{
       <Route path ="counter" element={<ReduxCounter/>}/>
       <Route path="mentors" element={<Mentors/>}/>
       <Route path="view" element={<StudentStatus/>}/>
+      <Route path="TakeAttendance" element={<TakeAttendance/>}></Route>
+      
       </Route>
+     
 
     </Routes>
     
