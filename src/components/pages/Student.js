@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
    
  
-const AddStudent = () => {
+const Student = () => {
   const [email, setEmail] = useState("");
   const [message, setMessage]= useState("");
 
@@ -40,4 +40,4 @@ const AddStudent = () => {
   )
 }
 
-export default AddStudent
+export default Student
