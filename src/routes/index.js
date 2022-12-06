@@ -14,6 +14,7 @@ import Addmentor from "../components/Addmentor";
 import HomePage from "../components/HomePage/HomePage"
 
 import StudentForm from "../views/Dashboard/StudentForm";
+import UpdateProfile from "../components/Settings/UpdateProfile";
 
 
 
@@ -39,6 +40,7 @@ const Index = () => {
           <Route path="StudentForm" element={<StudentForm />} />
           <Route path="" element={<Statistics />} />
           <Route path="Addmentor" element={<Addmentor/>}/>
+          <Route path="UpdateProfile" element={<UpdateProfile/>}/>
 
         </Route>
 
