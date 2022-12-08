@@ -1,14 +1,29 @@
 
-import React from 'react-dom'
+import {React, useState, useEffect} from 'react';
 import '../Dashboard/admin.css'
-import {Link,Outlet } from 'react-router-dom'
+import {Link,Outlet, useNavigate} from 'react-router-dom';
 
 
 const AdminDashboard = () => {
+  const [isLoggedIn, setIsLoggedIn]= useState(false);
+  const [token, setToken]= useState(null);
+  const navigate = useNavigate();
+
+  useEffect(()=>{
+    const token = localStorage.getItem("token");
+    if(token){
+      setIsLoggedIn(true);
+      setToken(token)
+    }else{
+      navigate("/signin")
+    }
+  })
   
   return(
     
 <div >
+
+  {isLoggedIn &&(
     <div className="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white dark:bg-gray-700 text-black dark:text-white">
       <div className="fixed w-full flex items-center justify-between h-14 text-white z-10">
         <div className="flex items-center justify-start md:justify-center pl-3 w-14 md:w-64 h-14 bg-gray-800 dark:bg-gray-800 border-none">
@@ -108,6 +123,7 @@ const AdminDashboard = () => {
 
       </div>
     </div>
+    )}
   </div>)
 }
 

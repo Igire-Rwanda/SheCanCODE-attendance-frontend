@@ -1,8 +1,26 @@
-import React from 'react'
+import React from 'react';
+import axios from 'axios';
+// import {Link} from "react-router-dom";
+import { useState, useEffect } from 'react';
 
 
 
 const TakeAttendance = () => {
+
+  const [attend, setAttend] = useState([])
+  const getAttend =async (data)=>{
+      const response = await axios.get("http://localhost:4040/v1/attendance/student/getAllStudent",data)
+      console.log(response.data.data)
+      setAttend (response.data.data);
+
+  }
+  useEffect(()=>{
+    getAttend();
+  },[])
+
+
+
+
   return (
     <div>
       <div class="md:px-32 py-8 w-full">
@@ -20,11 +38,12 @@ const TakeAttendance = () => {
         </tr>
       </thead>
     <tbody class="text-gray-700">
+    {attend.map((members) =>(
       <tr>
-        <td class="w-1/3 text-left py-3 px-4">Aline</td>
-        <td class="w-1/3 text-left py-3 px-4">Smith</td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">honorineuwituze896@gmail.com</a></td>
+        <td class="w-1/3 text-left py-3 px-4">{members?.firstName}</td>
+        <td class="w-1/3 text-left py-3 px-4">{members?.lastName}</td>
+        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">{members?.phone}</a></td>
+        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">{members?.email}</a></td>
         <div class="custom-select" style={{width:"200px"}}>
   <select>
     <option value="0">Select Status:</option>
@@ -33,49 +52,10 @@ const TakeAttendance = () => {
     <option value="2">Pending</option>
   </select>
 </div>
-      </tr>
-      <tr class="bg-gray-100">
-        <td class="w-1/3 text-left py-3 px-4">Emma</td>
-        <td class="w-1/3 text-left py-3 px-4">Johnson</td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@gmail.com</a></td>
-        <div class="custom-select" style={{width:"200px"}}>
-  <select>
-    <option value="0">Select Status:</option>
-    <option value="1">Present</option>
-    <option value="2">Absent</option>
-    <option value="2">Pending</option>
-  </select>
-</div>
-      </tr>
-      <tr>
-        <td class="w-1/3 text-left py-3 px-4">Oliver</td>
-        <td class="w-1/3 text-left py-3 px-4">Williams</td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@gmail.com</a></td>
-        <div class="custom-select" style={{width:"200px"}}>
-  <select>
-    <option value="0">Select Status:</option>
-    <option value="1">Present</option>
-    <option value="2">Absent</option>
-    <option value="2">Pending</option>
-  </select>
-</div>
-      </tr>
-      <tr class="bg-gray-100">
-        <td class="w-1/3 text-left py-3 px-4">Isabella</td>
-        <td class="w-1/3 text-left py-3 px-4">Brown</td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="tel:622322662">622322662</a></td>
-        <td class="text-left py-3 px-4"><a class="hover:text-blue-500" href="mailto:jonsmith@mail.com">jonsmith@gmail.com</a></td>
-  <div class="custom-select" style={{width:"200px"}}>
-  <select>
-    <option value="0">Select Status:</option>
-    <option value="1">Present</option>
-    <option value="2">Absent</option>
-    <option value="2">Pending</option>
-  </select>
-</div>
-      </tr>
+      </tr>))}
+      
+     
+      
     </tbody>
     </table>
   </div>
