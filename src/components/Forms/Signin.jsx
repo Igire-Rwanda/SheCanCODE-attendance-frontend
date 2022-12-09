@@ -31,21 +31,16 @@ function Signin() {
 
           <form onSubmit={handleSubmit(async (data) => {
             console.log(data);
-
             try {
-
               const response = await axios.post("http://localhost:4040/v1/attendance/user/login", data);
               toast.success("You are logged In");
               console.log(response?.data?.data);
               localStorage.setItem('token', response.data.data.token);
               localStorage.setItem('role', response.data.data.user.role);
-
               navigate("/dashboard")
-
             } catch (error) {
 
               toast.error(error.response.data.error)
-
             }
           })}
             className="p-12 md:p-10">
